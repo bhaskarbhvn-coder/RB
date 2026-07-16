@@ -1,9 +1,49 @@
-html<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>My First Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Index</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 40px; background-color: #f9f9f9; }
+        .container { max-width: 600px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        h1 { color: #333; text-align: center; }
+        ul { list-style-type: none; padding: 0; }
+        li { border-bottom: 1px solid #eee; padding: 15px 0; display: flex; align-items: center; gap: 15px; }
+        li:last-child { border-bottom: none; }
+        .thumb-img { width: 60px; height: 60px; object-fit: cover; border-radius: 4px; flex-shrink: 0; background-color: #ddd; }
+        .content { flex-grow: 1; }
+        a { text-decoration: none; color: #0066cc; font-weight: bold; font-size: 1.1em; }
+        a:hover { text-decoration: underline; }
+        p { color: #666; margin: 5px 0 0 0; }
+    </style>
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <div class="container">
+        <h1>Item Index</h1>
+        <ul>
+            <li>
+                <img class="thumb-img" src="https://unsplash.com" alt="Space thumb">
+                <div class="content">
+                    <a href="item1.html">Item 1: Project Apollo</a>
+                    <p>A brief overview and mission details for Apollo.</p>
+                </div>
+            </li>
+            <li>
+                <img class="thumb-img" src="https://unsplash.com" alt="Code thumb">
+                <div class="content">
+                    <a href="item2.html">Item 2: Web Development</a>
+                    <p>Modern frontend frameworks and best practices.</p>
+                </div>
+            </li>
+            <li>
+                <img class="thumb-img" src="https://unsplash.com" alt="AI thumb">
+                <div class="content">
+                    <a href="item3.html">Item 3: Machine Learning</a>
+                    <p>Introduction to neural networks and data pipelines.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
 </body>
 </html>
